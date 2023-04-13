@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            margin: auto;
+            cursor: pointer;
+           
+        }
+        td{
+            border:1px solid black;
+            color: brown;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Exam</h1> -->
+
+    <table cellspacing="0" cellpadding="10px" id="table">
+        <tr>
+            <td id="1"  style="background-color:orange;">1</td>
+            <td id="2"  style="background-color:red;">2</td>
+            <td id="3" style="background-color:purple ;">3</td>
+        </tr>
+
+        <tr>
+            <td id="4" style="background-color:black;">4</td>
+            <td id="5" style="background-color:green;">5</td>
+            <td id="6" style="background-color:violet;">6</td>
+        </tr>
+
+        <tr>
+            <td id="7" style="background-color:rgb(41, 166, 182);">7</td>
+            <td id="8" style="background-color:rgb(144, 0, 255);">8</td> 
+            <td id="9" style="background-color:rgb(217, 255, 0);">9</td>
+        </tr>
+    </table>
+
+
+    <script>
+        document.getElementById('table').addEventListener('click',(two)=>{
+        
+         
+
+        elem(two.target);
+
+
+        document.body.style.backgroundColor=document.getElementById(id).style.backgroundColor;
+        
+
+        function elem(div){
+            id = div.id;
+            // alert(id);
+
+        }
+
+
+        })
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
